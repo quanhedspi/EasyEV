@@ -1,7 +1,7 @@
 //
 //  HomeViewController.m
 //  EnglishNow
-//
+//  ban nay push len server
 //
 //  Created by Dinh Quan  on 3/21/13.
 //  Copyright (c) 2013 Dinh Quan. All rights reserved.
@@ -44,7 +44,7 @@
     [sentenceTextView configureView];
     NSString * text = @"The United States international scored 60 goals in 224 appearances for the Cottagers but joined Spurs at the end of August. The United States international scored 60 goals in 224 appearances for the Cottagers but joined Spurs at the end of AugustThe United States international scored 60 goals in 224 appearances for the Cottagers but joined Spurs at the end of August";
     [sentenceTextView setText:text];
-    CGSize maximumSize = CGSizeMake(300, 9998);
+    CGSize maximumSize = CGSizeMake(300, 9999);
     CGSize storyStringSize = [text sizeWithFont:sentenceTextView.label.font
                               constrainedToSize:maximumSize
                                   lineBreakMode:sentenceTextView.label.lineBreakMode];
