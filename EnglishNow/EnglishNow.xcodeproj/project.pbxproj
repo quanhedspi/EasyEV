@@ -35,7 +35,6 @@
 		F470B1B616FB3D310064AFFF /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F470B1B516FB3D310064AFFF /* SettingsViewController.m */; };
 		F470B1B916FB3D460064AFFF /* MySlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F470B1B816FB3D460064AFFF /* MySlideViewController.m */; };
 		F470B1C716FB3D610064AFFF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F470B1C116FB3D610064AFFF /* HomeViewController.m */; };
-		F470B1C816FB3D610064AFFF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F470B1C216FB3D610064AFFF /* HomeViewController.xib */; };
 		F470B1D316FB3DF40064AFFF /* cell_background.png in Resources */ = {isa = PBXBuildFile; fileRef = F470B1C916FB3DF40064AFFF /* cell_background.png */; };
 		F470B1D416FB3DF40064AFFF /* cell_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F470B1CA16FB3DF40064AFFF /* cell_background@2x.png */; };
 		F470B1D516FB3DF40064AFFF /* cell_selected_background.png in Resources */ = {isa = PBXBuildFile; fileRef = F470B1CB16FB3DF40064AFFF /* cell_selected_background.png */; };
@@ -46,9 +45,12 @@
 		F470B1DA16FB3DF40064AFFF /* seasrch_bar_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F470B1D016FB3DF40064AFFF /* seasrch_bar_background@2x.png */; };
 		F470B1DB16FB3DF40064AFFF /* section_background.png in Resources */ = {isa = PBXBuildFile; fileRef = F470B1D116FB3DF40064AFFF /* section_background.png */; };
 		F470B1DC16FB3DF40064AFFF /* section_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F470B1D216FB3DF40064AFFF /* section_background@2x.png */; };
+		F4F100A1170A50BB00AF702E /* WWLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F1009E170A50BB00AF702E /* WWLabel.m */; };
+		F4F100A2170A50BB00AF702E /* WWPhoneticTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F100A0170A50BB00AF702E /* WWPhoneticTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F431E407170A575100CE80BE /* TabWordProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabWordProtocol.h; sourceTree = "<group>"; };
 		F43CB4DA16FC96B8009592E5 /* SideMenuButton_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SideMenuButton_Normal.png; sourceTree = "<group>"; };
 		F43CB4DB16FC96B8009592E5 /* SideMenuButton_Normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SideMenuButton_Normal@2x.png"; sourceTree = "<group>"; };
 		F43CB4DC16FC96B8009592E5 /* SideMenuButton_Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SideMenuButton_Pressed.png; sourceTree = "<group>"; };
@@ -63,7 +65,7 @@
 		F43CB4EE16FC9E99009592E5 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		F43CB4EF16FC9E99009592E5 /* word.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = word.png; sourceTree = "<group>"; };
 		F43CB4F016FC9E9A009592E5 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
-		F470B18616FB3C980064AFFF /* EasyEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F470B18616FB3C980064AFFF /* EnglishNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F470B18A16FB3C980064AFFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F470B18C16FB3C980064AFFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F470B18E16FB3C980064AFFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,7 +89,6 @@
 		F470B1B816FB3D460064AFFF /* MySlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySlideViewController.m; sourceTree = "<group>"; };
 		F470B1C016FB3D610064AFFF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		F470B1C116FB3D610064AFFF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		F470B1C216FB3D610064AFFF /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		F470B1C916FB3DF40064AFFF /* cell_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_background.png; sourceTree = "<group>"; };
 		F470B1CA16FB3DF40064AFFF /* cell_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_background@2x.png"; sourceTree = "<group>"; };
 		F470B1CB16FB3DF40064AFFF /* cell_selected_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_selected_background.png; sourceTree = "<group>"; };
@@ -98,6 +99,10 @@
 		F470B1D016FB3DF40064AFFF /* seasrch_bar_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seasrch_bar_background@2x.png"; sourceTree = "<group>"; };
 		F470B1D116FB3DF40064AFFF /* section_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = section_background.png; sourceTree = "<group>"; };
 		F470B1D216FB3DF40064AFFF /* section_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "section_background@2x.png"; sourceTree = "<group>"; };
+		F4F1009D170A50BB00AF702E /* WWLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLabel.h; sourceTree = "<group>"; };
+		F4F1009E170A50BB00AF702E /* WWLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLabel.m; sourceTree = "<group>"; };
+		F4F1009F170A50BB00AF702E /* WWPhoneticTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPhoneticTextView.h; sourceTree = "<group>"; };
+		F4F100A0170A50BB00AF702E /* WWPhoneticTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPhoneticTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +123,7 @@
 		F470B17B16FB3C980064AFFF = {
 			isa = PBXGroup;
 			children = (
-				F470B19216FB3C980064AFFF /* EasyEV */,
+				F470B19216FB3C980064AFFF /* EnglishNow */,
 				F470B18916FB3C980064AFFF /* Frameworks */,
 				F470B18716FB3C980064AFFF /* Products */,
 			);
@@ -127,7 +132,7 @@
 		F470B18716FB3C980064AFFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F470B18616FB3C980064AFFF /* EasyEV.app */,
+				F470B18616FB3C980064AFFF /* EnglishNow.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,9 +148,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F470B19216FB3C980064AFFF /* EasyEV */ = {
+		F470B19216FB3C980064AFFF /* EnglishNow */ = {
 			isa = PBXGroup;
 			children = (
+				F4F1009C170A50A900AF702E /* Utils */,
 				F470B1AE16FB3CF80064AFFF /* Menu */,
 				F470B1AD16FB3CD60064AFFF /* View Controller */,
 				F470B19B16FB3C980064AFFF /* AppDelegate.h */,
@@ -153,6 +159,7 @@
 				F470B1A416FB3C980064AFFF /* EasyEV.xcdatamodeld */,
 				F470B19316FB3C980064AFFF /* Supporting Files */,
 			);
+			name = EnglishNow;
 			path = EasyEV;
 			sourceTree = "<group>";
 		};
@@ -201,7 +208,6 @@
 			children = (
 				F470B1C016FB3D610064AFFF /* HomeViewController.h */,
 				F470B1C116FB3D610064AFFF /* HomeViewController.m */,
-				F470B1C216FB3D610064AFFF /* HomeViewController.xib */,
 				F470B1B416FB3D310064AFFF /* SettingsViewController.h */,
 				F470B1B516FB3D310064AFFF /* SettingsViewController.m */,
 				F43CB4E316FC9A70009592E5 /* WordsViewController.h */,
@@ -226,12 +232,24 @@
 			name = Menu;
 			sourceTree = "<group>";
 		};
+		F4F1009C170A50A900AF702E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F4F1009D170A50BB00AF702E /* WWLabel.h */,
+				F4F1009E170A50BB00AF702E /* WWLabel.m */,
+				F4F1009F170A50BB00AF702E /* WWPhoneticTextView.h */,
+				F4F100A0170A50BB00AF702E /* WWPhoneticTextView.m */,
+				F431E407170A575100CE80BE /* TabWordProtocol.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F470B18516FB3C980064AFFF /* EasyEV */ = {
+		F470B18516FB3C980064AFFF /* EnglishNow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F470B1A916FB3C980064AFFF /* Build configuration list for PBXNativeTarget "EasyEV" */;
+			buildConfigurationList = F470B1A916FB3C980064AFFF /* Build configuration list for PBXNativeTarget "EnglishNow" */;
 			buildPhases = (
 				F470B18216FB3C980064AFFF /* Sources */,
 				F470B18316FB3C980064AFFF /* Frameworks */,
@@ -241,9 +259,9 @@
 			);
 			dependencies = (
 			);
-			name = EasyEV;
+			name = EnglishNow;
 			productName = EasyEV;
-			productReference = F470B18616FB3C980064AFFF /* EasyEV.app */;
+			productReference = F470B18616FB3C980064AFFF /* EnglishNow.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -255,7 +273,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Dinh Quan";
 			};
-			buildConfigurationList = F470B18016FB3C980064AFFF /* Build configuration list for PBXProject "EasyEV" */;
+			buildConfigurationList = F470B18016FB3C980064AFFF /* Build configuration list for PBXProject "EnglishNow" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -267,7 +285,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F470B18516FB3C980064AFFF /* EasyEV */,
+				F470B18516FB3C980064AFFF /* EnglishNow */,
 			);
 		};
 /* End PBXProject section */
@@ -282,7 +300,6 @@
 				F470B1A116FB3C980064AFFF /* Default@2x.png in Resources */,
 				F470B1A316FB3C980064AFFF /* Default-568h@2x.png in Resources */,
 				F470B1B316FB3D1B0064AFFF /* SlideViewController.xib in Resources */,
-				F470B1C816FB3D610064AFFF /* HomeViewController.xib in Resources */,
 				F470B1D316FB3DF40064AFFF /* cell_background.png in Resources */,
 				F470B1D416FB3DF40064AFFF /* cell_background@2x.png in Resources */,
 				F470B1D516FB3DF40064AFFF /* cell_selected_background.png in Resources */,
@@ -322,6 +339,8 @@
 				F470B1C716FB3D610064AFFF /* HomeViewController.m in Sources */,
 				F43CB4E616FC9A70009592E5 /* WordsViewController.m in Sources */,
 				F43CB4EB16FC9AA7009592E5 /* StoryViewController.m in Sources */,
+				F4F100A1170A50BB00AF702E /* WWLabel.m in Sources */,
+				F4F100A2170A50BB00AF702E /* WWPhoneticTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +432,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F470B18016FB3C980064AFFF /* Build configuration list for PBXProject "EasyEV" */ = {
+		F470B18016FB3C980064AFFF /* Build configuration list for PBXProject "EnglishNow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F470B1A716FB3C980064AFFF /* Debug */,
@@ -422,7 +441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F470B1A916FB3C980064AFFF /* Build configuration list for PBXNativeTarget "EasyEV" */ = {
+		F470B1A916FB3C980064AFFF /* Build configuration list for PBXNativeTarget "EnglishNow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F470B1AA16FB3C980064AFFF /* Debug */,

@@ -10,7 +10,8 @@
 #import <UIKit/UIKit.h>
 
 #import "SlideViewController.h"
+#import "TabWordProtocol.h"
 
-@interface HomeViewController : UIViewController <SlideViewControllerSlideDelegate>
+@interface HomeViewController : UIViewController <SlideViewControllerSlideDelegate, TabWordProtocol>
 
 @end

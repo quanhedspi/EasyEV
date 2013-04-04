@@ -10,4 +10,6 @@
 
 @protocol TabWordProtocol <NSObject>
 
+- (void) wordTab: (NSString *) word;
+
 @end

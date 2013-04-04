@@ -1,10 +1,12 @@
 //
 //  WWPhoneticTextView.m
-//  SVST Bridging Words
+//  EnglishNow
 //
-//  Created by Mahmood1 on 2/6/13.
-//  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
 //
+//  Created by Dinh Quan  on 4/1/13.
+//  Copyright (c) 2013 Dinh Quan. All rights reserved.
+//
+
 #import "WWPhoneticTextView.h"
 #import "WWLabel.h"
 
@@ -16,9 +18,9 @@
 #define UILabelMagicLeftMargin -5
 
 @implementation WWPhoneticTextView {
-WWLabel *label;
-NSMutableAttributedString *labelText;
-NSRange tappedRange;
+    WWLabel *label;
+    NSMutableAttributedString *labelText;
+    NSRange tappedRange;
 }
 @synthesize label;
 // ... skipped init methods, very simple, just call through to configureView
@@ -97,6 +99,8 @@ NSRange tappedRange;
             
             if (tapPoint.x < lineStringSize.width && tapPoint.y > (partialStringSize.height-label.font.pointSize) && tapPoint.y < partialStringSize.height) {
                 NSLog(@"Tapped word %@", word);
+//                [NSThread detachNewThreadSelector:@selector(wordTab:) toTarget:self.delegate withObject:word];
+                [self.delegate performSelector:@selector(wordTab:) withObject:word];
                 if (tappedRange.location != NSNotFound) {
                     //[labelText addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:tappedRange];
                 }
