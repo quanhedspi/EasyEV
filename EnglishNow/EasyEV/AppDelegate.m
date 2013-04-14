@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Utils.h"
 #import "MySlideViewController.h"
 
 @implementation AppDelegate
@@ -26,6 +27,9 @@
     self.window.rootViewController = slideViewController;
     
     [self.window makeKeyAndVisible];
+    
+    [self initDatabase];
+    
     return YES;
 }
 
@@ -150,6 +154,12 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (void) initDatabase {
+    [Utils copyDatabaseIfNeeded];
+    
+    NSLog(@"result: %@", [Utils search:@"hello"]);
 }
 
 @end

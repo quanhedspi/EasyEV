@@ -91,7 +91,7 @@
         
         //read story
         NSMutableDictionary *storyViewControllerDictionary = [NSMutableDictionary dictionary];
-        [storyViewControllerDictionary setObject:@"  Story" forKey:kSlideViewControllerViewControllerTitleKey];
+        [storyViewControllerDictionary setObject:@"  Free Reading" forKey:kSlideViewControllerViewControllerTitleKey];
         [storyViewControllerDictionary setObject:@"StoryViewController" forKey:kSlideViewControllerViewControllerNibNameKey];
         [storyViewControllerDictionary setObject:[StoryViewController class] forKey:kSlideViewControllerViewControllerClassKey];
         [storyViewControllerDictionary setObject:[UIImage imageNamed:@"book.png"] forKey:kSlideViewControllerViewControllerIconKey];
