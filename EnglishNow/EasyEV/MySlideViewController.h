@@ -5,6 +5,7 @@
 //  Created by Andrew Carter on 12/18/11.
 
 #import "SlideViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface MySlideViewController : SlideViewController <SlideViewControllerDelegate> {
     

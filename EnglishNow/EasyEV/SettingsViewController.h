@@ -8,7 +8,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface SettingsViewController : UIViewController
+@interface SettingsViewController : UIViewController<FBUserSettingsDelegate>
+@property (strong, nonatomic) FBUserSettingsViewController *settingsViewController;
+-(IBAction)settingsButtonWasPressed:(id)sender;
 
 @end

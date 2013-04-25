@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class MySlideViewController;
+@class LoginViewController;
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
@@ -18,5 +21,13 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+
+@property (strong, nonatomic) UINavigationController *navigationController;
+
+@property (strong, nonatomic) MySlideViewController *slideViewController;
+
+@property (strong, nonatomic) LoginViewController* loginViewController;
+
+@property BOOL isNavigating;
 
 @end

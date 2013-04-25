@@ -15,12 +15,14 @@
 
 @synthesize datasource = _datasource;
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
     
     if (self) {
-        
+        self.navigationItem.hidesBackButton = YES;
         //creating _searchDatasource for later use!
         _searchDatasource = [NSMutableArray new];
         

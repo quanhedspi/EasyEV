@@ -23,6 +23,8 @@
     UITextView * dictText;
     
 }
+@synthesize userProfileImage;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,6 +39,8 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"Home";
+    userProfileImage = [[FBProfilePictureView alloc] initWithFrame:CGRectMake(300, 100, 100, 100)];
+
     // Do any additional setup after loading the view from its nib.
     dictScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 10, 320, 130)];
     dictText = [[UITextView alloc] initWithFrame:CGRectMake(10, 0, 300, 130)];
@@ -64,6 +68,8 @@
     }
     [self handleSwipeGesture:nil];
     [self handleSwipeGesture:nil];
+    
+    [self populateUserDetails];
 }
 
 - (UIScrollView *) createASentenceView: (NSString *) text withIndex: (int) index {
@@ -156,5 +162,20 @@
     currentSentenceViewIndex = b;
 }
 
-
+// Ham de lay ve info cua user gom co ID, name, link ava
+- (void)populateUserDetails {
+    if (FBSession.activeSession.isOpen) {
+        [[FBRequest requestForMe] startWithCompletionHandler:
+         ^(FBRequestConnection *connection, NSDictionary<FBGraphUser> *user, NSError *error) {
+             if (!error) {
+                 NSLog(@"%@", user.name);
+                 NSLog(@"%@", user.id);
+                 NSLog(@"%@", user.username);
+                 NSLog(@"%@", user.first_name);
+                 NSLog(@"%@", user.link);
+                 self.userProfileImage.profileID = [user objectForKey:@"id"];
+             }
+         }];
+    }
+}
 @end
